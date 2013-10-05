@@ -17,7 +17,11 @@ ALLOWED_HOSTS = []
 
 # Make this unique, and don't share it with anybody.
 # TODO: set proper secret key
-SECRET_KEY = os.environ.get('SECRET_KEY') or None
+SECRET_KEY = os.environ.get('SECRET_KEY') or ''
 
 ADDITIONAL_INSTALLED_APPS = (
 )
+
+# Path to a directory to be used to store GPX/KML data
+# TODO: set proper path
+GPX_ROOT = os.environ.get('GPX_ROOT') or ''

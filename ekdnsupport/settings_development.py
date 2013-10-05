@@ -3,6 +3,8 @@
 import os
 import dj_database_url
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -21,3 +23,6 @@ ADDITIONAL_INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
 )
+
+# Path to a directory to be used to store GPX/KML data
+GPX_ROOT = os.path.join(BASE_DIR, 'gpx')
