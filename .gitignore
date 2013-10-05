@@ -1,0 +1,8 @@
+# Django
+*.sqlite3
+
+# Mac
+.DS_Store
+
+# Python
+*.pyc
