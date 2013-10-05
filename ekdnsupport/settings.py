@@ -141,3 +141,6 @@ LOGGING = {
         },
     }
 }
+
+# Authentication
+LOGIN_URL = '/auth/login/'
