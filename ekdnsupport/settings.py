@@ -3,7 +3,7 @@
 try:
     from settings_production import *
 except ImportError:
-    from settings_development import import *
+    from settings_development import *
 
 
 ADMINS = (
