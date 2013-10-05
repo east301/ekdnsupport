@@ -6,7 +6,11 @@ urlpatterns = patterns('',
     # url(r'^$', 'ekdnsupport.views.home', name='home'),
     # url(r'^ekdnsupport/', include('ekdnsupport.foo.urls')),
 
-    url('^$', 'lib.views.home'),
+    url(r'^$', 'lib.views.home'),
+
+    # django.contrib.auth
+    url(r'^auth/login/$', 'django.contrib.auth.views.login', dict(template_name='auth/login.html')),
+    url(r'^auth/logout/$', 'django.contrib.auth.views.logout', dict(next_page='/auth/login/')),
 )
 
 if 'django.contrib.admin' in settings.INSTALLED_APPS:
