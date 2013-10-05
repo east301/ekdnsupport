@@ -5,6 +5,8 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'ekdnsupport.views.home', name='home'),
     # url(r'^ekdnsupport/', include('ekdnsupport.foo.urls')),
+
+    url('^$', 'lib.views.home'),
 )
 
 if 'django.contrib.admin' in settings.INSTALLED_APPS:
