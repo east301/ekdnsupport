@@ -18,10 +18,8 @@ class GpxData(models.Model):
 
     def save(self, *args, **kwargs):
         if self.id is None:
-            if self.uid is None:
-                self.uid = uuid.uuid4().hex
-            if self.created is None:
-                self.created = timezone.now()
+            self.uid = uuid.uuid4().hex
+            self.created = timezone.now()
 
         return super(GpxData, self).save(*args, **kwargs)
 

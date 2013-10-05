@@ -11,6 +11,9 @@ urlpatterns = patterns('',
     # django.contrib.auth
     url(r'^auth/login/$', 'django.contrib.auth.views.login', dict(template_name='auth/login.html')),
     url(r'^auth/logout/$', 'django.contrib.auth.views.logout', dict(next_page='/auth/login/')),
+
+    # apps.mydata
+    url(r'^mydata/upload/$', 'apps.mydata.views.upload'),
 )
 
 if 'django.contrib.admin' in settings.INSTALLED_APPS:
