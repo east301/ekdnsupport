@@ -110,6 +110,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'lib',
+    'apps.mydata',
 ) + ADDITIONAL_INSTALLED_APPS
 
 # A sample logging configuration. The only tangible logging
