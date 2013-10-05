@@ -23,4 +23,6 @@ ALLOWED_HOSTS = []
 SECRET_KEY = '@8t2z6y=-n&-+cbtdgztr449icx!%t7(w_x_+xemjf189pglq9'
 
 ADDITIONAL_INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.admindocs',
 )
